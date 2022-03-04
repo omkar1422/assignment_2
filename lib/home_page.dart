@@ -22,14 +22,14 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Assignment-2',
+          'Dollars to rupees converter',
           style: TextStyle(
-            fontSize: 28,
-            fontWeight: FontWeight.w600,
+            fontSize: 20,
+            fontWeight: FontWeight.w400,
           ),
         ),
         centerTitle: true,
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.green,
       ),
       body: SingleChildScrollView(
         physics: BouncingScrollPhysics(),
@@ -45,6 +45,7 @@ class _HomePageState extends State<HomePage> {
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w500,
+                    color: Colors.orange
                   ),
                 ),
               ),
@@ -58,7 +59,7 @@ class _HomePageState extends State<HomePage> {
                   decoration: InputDecoration(
                     prefixIcon: Icon(
                       FontAwesomeIcons.dollarSign,
-                      color: Colors.red,
+                      color: Colors.blueGrey,
                     ),
                   ),
                 ),
@@ -80,7 +81,7 @@ class _HomePageState extends State<HomePage> {
                   height: 50,
                   width: 120,
                   decoration: BoxDecoration(
-                    color: Colors.red,
+                    color: Colors.lightBlue,
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: Text(
@@ -97,7 +98,7 @@ class _HomePageState extends State<HomePage> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 18.0),
                 child: Text(
-                  '$dollar Dollar = ${dollar * 75.35} Rupee',
+                  '$dollar Dollar = ${dollar * 76.17} Rupee',
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
                     fontSize: 24,
@@ -106,7 +107,7 @@ class _HomePageState extends State<HomePage> {
               ),
               SizedBox(height: 20),
               Image(
-                image: AssetImage('assets/book.jpg'),
+                image: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY3d8l3eAZXIybbJ7PB54ANAtiaM_MO5U4Bw&usqp=CAU'),
                 height: 450,
               ),
             ],
